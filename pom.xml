@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.youdevise</groupId>
 	<artifactId>test-driven-detectors4findbugs</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<version>2.0-SNAPSHOT</version>
 
 	<packaging>jar</packaging>
 	<name>test-driven-detectors4findbugs</name>
@@ -28,6 +28,11 @@
 			<name>Graham Allan</name>
 			<email>graham.allan@youdevise.com</email>
 		</developer>
+		<developer>
+			<id>wadahiro</id>
+			<name>Hiroyuki Wada</name>
+			<email>wadahiro@gmail.com</email>
+		</developer>
 	</developers>
 
 	<parent>
@@ -43,19 +48,7 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<findbugs.version>[1.3.9, 2.0.2]</findbugs.version>
-			</properties>
-		</profile>
-		<profile>
-			<id>build-with-findbugs-v1</id>
-			<properties>
-				<findbugs.version>1.3.9</findbugs.version>
-			</properties>
-		</profile>
-		<profile>
-			<id>build-with-findbugs-v2</id>
-			<properties>
-				<findbugs.version>2.0.2</findbugs.version>
+				<findbugs.version>3.0.0</findbugs.version>
 			</properties>
 		</profile>
 	</profiles>
@@ -66,8 +59,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.0.2</version>
 				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 		</plugins>
